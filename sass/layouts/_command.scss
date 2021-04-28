@@ -1,0 +1,59 @@
+.occupation-part {
+    background-color: var(--button-color);
+    padding: 94px 0 94px 0;
+}
+.command-block {
+    padding: 30px;
+}
+.command__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.command:not(:last-child) {
+    margin-right: 30px;
+}
+.command {
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+// @media screen and (min-width: 768px) {
+//     .conteiner {
+//         background-color: red;
+//     }
+// }
+
+.command__position {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--grey-light-color);
+    text-align: center;
+    margin-bottom: 16px;
+}
+.icon {
+    fill: var(--border-color);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social-icons-link:hover &,
+    .social-icons-link:focus & {
+        fill: var(--white-color);
+    }
+}

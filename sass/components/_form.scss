@@ -1,0 +1,83 @@
+.form {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.form__input:valid {
+    color: red;
+}
+.form__input:invalid {
+    color: forestgreen;
+}
+.form__field {
+    position: relative;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.form__input:focus~.form__icon {
+    fill: var(--accent-color);
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input:focus {
+    border: 1px solid var(--accent-color);
+    outline-color: var(--accent-color);
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__icon {
+    position: relative;
+    top: 14px;
+    left: 15px;
+}
+.agreement input[type='checkbox'] {
+    width: 16px;
+    height: 15px;
+}
+.agreement__label--check {
+    cursor: pointer;
+}
+.agreement__label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--grey-light-color);
+    display: inline;
+}
+.contract {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+.form__input {
+    position: absolute;
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+    font-family: inherit;
+    border-radius: 4px;
+    border-color: rgba(33, 33, 33, 0.2);
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.agreement {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-title {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 12px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+}
