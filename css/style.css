@@ -1055,6 +1055,33 @@ a:focus .overlay__item {
   text-align: center;
 }
 
+.command {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .command {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command {
+    flex-basis: calc((100% - 30px * 3) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .command:nth-child(2n) {
+    margin-right: 0;
+  }
+  .command:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
 .command__position {
   font-size: 16px;
   line-height: 1.19;
