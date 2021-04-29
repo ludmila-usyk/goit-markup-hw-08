@@ -9,7 +9,9 @@ html {
 *::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
+    outline: 2px solid red;
 }
+
 a {
     text-decoration: none;
 }
