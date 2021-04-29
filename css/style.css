@@ -1267,18 +1267,6 @@ a:focus .overlay__item {
   margin-bottom: 10px;
 }
 
-@media (width: 480px) {
-  .advantage__title {
-    text-align: center;
-  }
-}
-
-@media (width: 768px) {
-  .advantage__title {
-    text-align: start;
-  }
-}
-
 .advantage__iteam {
   font-family: Roboto;
   font-style: normal;
