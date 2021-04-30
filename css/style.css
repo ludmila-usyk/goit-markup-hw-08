@@ -141,7 +141,6 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 a {
@@ -1370,6 +1369,12 @@ a:focus .overlay__item {
   left: 200px;
 }
 
+.mobile-menu-icon:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--button-color);
+}
+
 .mobile-menu-icon {
   width: 40px;
   height: 40px;
@@ -1395,7 +1400,6 @@ a:focus .overlay__item {
   flex-direction: column;
   z-index: 100;
   width: 100%;
-  max-width: 340px;
   height: 100vh;
   padding: 118px 40px 60px;
   background: #ffffff;
@@ -1415,5 +1419,44 @@ a:focus .overlay__item {
 
 .mobile-menu .menu__item {
   margin-bottom: 32px;
+}
+
+.menu {
+  display: inline-flex;
+  margin-bottom: 300px;
+}
+
+.menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.menu-item__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--black-color);
+}
+
+.menu-contact__item:nth-child(1) {
+  margin-bottom: 32px;
+}
+
+.menu-contact__item {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--grey-light-color);
+}
+
+.menu-item__link:hover,
+.menu-item__link:focus {
+  color: var(--accent-color);
+}
+
+.here {
+  color: var(--accent-color);
 }
 /*# sourceMappingURL=style.css.map */
