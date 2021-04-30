@@ -1280,6 +1280,7 @@ a:focus .overlay__item {
 @media (max-width: 767px) {
   .advantage__main {
     margin-bottom: 30px;
+    flex-basis: 100%;
   }
 }
 
@@ -1331,6 +1332,18 @@ a:focus .overlay__item {
     padding-right: 15px;
     margin: auto;
     margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantage__wrap {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantage__main:not(:last-child) {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
