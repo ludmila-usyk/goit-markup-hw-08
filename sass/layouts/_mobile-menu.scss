@@ -5,8 +5,8 @@
     height: 40px;
     background-color: transparent;
     border: none;
-    bottom: 10px;
-    left: 200px;
+    bottom: 10%;
+    left: 20%;
 }
 .mobile-menu-icon:hover {
     background-color: transparent;
@@ -59,7 +59,6 @@
 .menu {
     display: inline-flex;
     margin-bottom: 300px;
-    // text-align: center;
 }
 .menu-item:not(:last-child) {
     margin-bottom: 40px;
@@ -76,10 +75,17 @@
 .menu-contact__item:nth-child(1) {
     margin-bottom: 32px;
 }
-.menu-contact__item {
+.menu__tell {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+.menu__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--grey-light-color);
 }
@@ -89,4 +95,22 @@
 }
 .here {
     color: var(--accent-color);
+}
+.mobile-menu-btn .icon-menu:hover,
+.mobile-menu-btn .icon-menu:focus {
+    fill: var(--accent-color);
+}
+.mobile-menu-btn .icon-close:hover,
+.mobile-menu-btn .icon-close:focus {
+    fill: var(--accent-color);
+}
+.mobile-menu {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+.mobile-menu-btn {
+    @media (min-width: 768px) {
+        display: none;
+    }
 }

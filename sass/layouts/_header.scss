@@ -56,10 +56,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
 }
-// .mail__tell:hover,
-// .mail__tell:focus {
-//     color: var(--accent-color);
-// }
 .site__nav-item .mail__tell {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -136,5 +132,20 @@
 @media screen and (max-width: 767.98px) {
     .site__nav {
         display: none;
+    }
+}
+.contact {
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+.site__nav-item {
+    @media (min-width: 768px) {
+        margin-right: 0;
+    }
+}
+.mail__tell {
+    @media (min-width: 768px) {
+        padding: 0;
     }
 }

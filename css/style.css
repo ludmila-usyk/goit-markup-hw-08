@@ -141,6 +141,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 a {
@@ -201,7 +202,6 @@ img {
 }
 
 button:hover {
-  background-color: var(--accent-color);
   cursor: pointer;
   color: var(--button-color);
 }
@@ -703,6 +703,24 @@ button:hover {
 @media screen and (max-width: 767.98px) {
   .site__nav {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .site__nav-item {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .mail__tell {
+    padding: 0;
   }
 }
 
@@ -1365,8 +1383,8 @@ a:focus .overlay__item {
   height: 40px;
   background-color: transparent;
   border: none;
-  bottom: 10px;
-  left: 200px;
+  bottom: 10%;
+  left: 20%;
 }
 
 .mobile-menu-icon:hover {
@@ -1443,10 +1461,18 @@ a:focus .overlay__item {
   margin-bottom: 32px;
 }
 
-.menu-contact__item {
+.menu__tell {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.menu__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--grey-light-color);
 }
@@ -1458,5 +1484,27 @@ a:focus .overlay__item {
 
 .here {
   color: var(--accent-color);
+}
+
+.mobile-menu-btn .icon-menu:hover,
+.mobile-menu-btn .icon-menu:focus {
+  fill: var(--accent-color);
+}
+
+.mobile-menu-btn .icon-close:hover,
+.mobile-menu-btn .icon-close:focus {
+  fill: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
