@@ -52,14 +52,6 @@
     width: 100%;
     display: block;
 }
-.site__nav-item .mail__tell {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-.site__nav-item .mail__tell {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 .mail__tell {
     font-family: 'Roboto';
     font-style: normal;
@@ -117,10 +109,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     margin-left: auto;
 }
 @media screen and (max-width: 767.98px) {
@@ -128,24 +116,42 @@
         display: none;
     }
 }
-
 @media screen and (max-width: 767.98px) {
     .site__nav {
         display: none;
     }
 }
 .contact {
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width:1200px) {
         display: block;
     }
 }
-.site__nav-item {
-    @media (min-width: 768px) {
-        margin-right: 0;
+.contact__item {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+        margin-bottom: 0;
     }
 }
 .mail__tell {
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px){
         padding: 0;
     }
+}
+// .contact__item .mail__tell {
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+// }
+.contact__item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
 }

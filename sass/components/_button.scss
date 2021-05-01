@@ -76,6 +76,11 @@ button:hover {
 .button__gallery:not(:last-child) {
     margin-right: 8px;
 }
+.button__gallery:nth-child(n + 4) {
+    @media (max-width: 767px) {
+        margin-top: 15px;
+    }
+}
 .button__gallery-item {
     font-weight: 500;
     font-size: 16px;
@@ -99,6 +104,14 @@ button:hover {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 50px;
+
+      @media (max-width: 767px) {
+          flex-wrap: wrap;
+      }
+
+      @media (min-width: 768px) {
+          justify-content: center;
+      }
 }
 .button-all {
     background-color: var(--accent-color);

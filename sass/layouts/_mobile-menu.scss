@@ -1,12 +1,12 @@
 .mobile-menu-btn {
-    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     z-index: 105;
     width: 40px;
     height: 40px;
     background-color: transparent;
     border: none;
-    bottom: 10%;
-    left: 20%;
 }
 .mobile-menu-icon:hover {
     background-color: transparent;
@@ -75,6 +75,9 @@
 .menu-contact__item:nth-child(1) {
     margin-bottom: 32px;
 }
+.menu-contact {
+    margin-bottom: 64px;
+}
 .menu__tell {
     font-weight: 500;
     font-size: 34px;
@@ -105,12 +108,12 @@
     fill: var(--accent-color);
 }
 .mobile-menu {
-    @media (min-width: 768px) {
+    @media (min-width: 767px) {
         display: none;
     }
 }
 .mobile-menu-btn {
-    @media (min-width: 768px) {
+    @media (min-width: 767px) {
         display: none;
     }
 }

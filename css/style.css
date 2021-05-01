@@ -283,6 +283,12 @@ button:hover {
   margin-right: 8px;
 }
 
+@media (max-width: 767px) {
+  .button__gallery:nth-child(n + 4) {
+    margin-top: 15px;
+  }
+}
+
 .button__gallery-item {
   font-weight: 500;
   font-size: 16px;
@@ -306,6 +312,18 @@ button:hover {
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    justify-content: center;
+  }
 }
 
 .button-all {
@@ -618,16 +636,6 @@ button:hover {
   display: block;
 }
 
-.site__nav-item .mail__tell {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.site__nav-item .mail__tell {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .mail__tell {
   font-family: 'Roboto';
   font-style: normal;
@@ -687,10 +695,6 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   margin-left: auto;
 }
 
@@ -706,22 +710,39 @@ button:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .contact {
     display: block;
   }
 }
 
-@media (min-width: 768px) {
-  .site__nav-item {
-    margin-right: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .contact__item {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .mail__tell {
     padding: 0;
   }
+}
+
+.contact__item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
 .logo__page {
@@ -769,6 +790,27 @@ button:hover {
   align-items: baseline;
   -ms-flex-pack: distribute;
   justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .footer__web {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__web {
+    margin-right: 165px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__web {
+    margin-right: 70px;
+    text-align: start;
+  }
 }
 
 .footer__input {
@@ -837,17 +879,11 @@ button:hover {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  text-align: center;
   max-width: 700px;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-}
-
-.hero {
-  background: var(--bg-color);
-  height: 600px;
 }
 
 .overlay {
@@ -858,6 +894,29 @@ button:hover {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-01/bg-i.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.hero {
+  background: var(--bg-color);
+  height: 600px;
+}
+
+@media (min-width: 767px) {
+  .hero {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
 }
 
 .task {
@@ -886,10 +945,11 @@ button:hover {
   border-radius: 1px;
 }
 
+.team-item__list:nth-child(-3 + n) {
+  margin-bottom: 0;
+}
+
 .team-item__list {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
   border: 1px solid #EEEEEE;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -902,12 +962,62 @@ button:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(117, 73, 73, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.team-item__list:nth-child(3n) {
-  margin-right: 0;
+@media (max-width: 767px) {
+  .team-item__list {
+    margin-bottom: 30px;
+  }
 }
 
-.team-item__list:nth-child(-3 + n) {
-  margin-bottom: 0;
+@media (min-width: 768px) {
+  .team-item__list {
+    flex-basis: calc((100% - 30px)/2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-item__list {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-item__list:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-item__list:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-item__list:not(:nth-child(-n + 6)) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-item__list:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-item__list:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-item__list:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .thumb {
@@ -1001,6 +1111,35 @@ a:focus .overlay__item {
   padding: 20px 24px;
 }
 
+@media (max-width: 767px) {
+  .cards {
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards {
+    margin-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards {
+    margin-bottom: 94px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 .customers__list:not(:last-child) {
   margin-right: 30px;
 }
@@ -1022,6 +1161,85 @@ a:focus .overlay__item {
   border-color: var(--accent-color);
 }
 
+@media (max-width: 767px) {
+  .customers__list {
+    min-width: 210px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .customers__list:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .customers__list {
+    min-width: 226px;
+  }
+}
+
+@media (min-width: 768px) {
+  .customers__list:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers__list:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .customers__list {
+    min-width: 170px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .customers__list:last-child {
+    margin-right: 0;
+  }
+}
+
+.title-customers {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .title-customers {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .title-customers {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title-customers {
+    padding-top: 86px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .customers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1031,6 +1249,19 @@ a:focus .overlay__item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .customers {
+    margin-bottom: 94px;
+    padding-bottom: 0;
+  }
 }
 
 .customers__client {
@@ -1347,7 +1578,7 @@ a:focus .overlay__item {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .advantage__wrap {
     display: flex;
     flex-wrap: wrap;
@@ -1377,14 +1608,14 @@ a:focus .overlay__item {
 }
 
 .mobile-menu-btn {
-  position: relative;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   z-index: 105;
   width: 40px;
   height: 40px;
   background-color: transparent;
   border: none;
-  bottom: 10%;
-  left: 20%;
 }
 
 .mobile-menu-icon:hover {
@@ -1461,6 +1692,10 @@ a:focus .overlay__item {
   margin-bottom: 32px;
 }
 
+.menu-contact {
+  margin-bottom: 64px;
+}
+
 .menu__tell {
   font-weight: 500;
   font-size: 34px;
@@ -1496,13 +1731,13 @@ a:focus .overlay__item {
   fill: var(--accent-color);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .mobile-menu {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .mobile-menu-btn {
     display: none;
   }

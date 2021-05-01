@@ -17,8 +17,76 @@
     &:focus {
         border-color: var(--accent-color);
     }
-}
 
+        @media (max-width: 767px) {
+            min-width: 210px;
+        }
+
+        @media screen and (max-width: 767px) {
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            min-width: 226px;
+        }
+
+        &:nth-child(n + 4) {
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            min-width: 170px;
+            margin-bottom: 0;
+        }
+
+        &:last-child {
+            @media (min-width: 1200px) {
+                margin-right: 0;
+            }
+        }
+}
+.title-customers {
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+    text-align: center;
+    margin-bottom: 50px;
+
+        @media (max-width: 767px) {
+            padding-top: 60px;
+            padding-bottom: 30px;
+
+            font-size: 28px;
+            line-height: 1.18;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding-top: 60px;
+            padding-bottom: 30px;
+
+            font-size: 28px;
+            line-height: 1.17;
+        }
+
+        @media (min-width: 1200px) {
+            padding-top: 86px;
+            padding-bottom: 50px;
+
+            font-size: 36px;
+            line-height: 1.16;
+        }
+}
 .customers {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -28,11 +96,17 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+     @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 60px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 94px;
+        padding-bottom: 0;
+    }
+        
 }
-// .customers__list:hover .icon,
-// .customers__list:focus .icon {
-//     fill: var(--button-color);
-// }
 .customers__client {
     display: -webkit-box;
     display: -ms-flexbox;
