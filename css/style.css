@@ -781,38 +781,6 @@ button:hover {
   display: list-item;
 }
 
-.footer__web {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -ms-flex-pack: distribute;
-  justify-content: space-between;
-}
-
-@media (max-width: 767px) {
-  .footer__web {
-    margin-bottom: 60px;
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer__web {
-    margin-right: 165px;
-    text-align: center;
-  }
-}
-
-@media (min-width: 1200px) {
-  .footer__web {
-    margin-right: 70px;
-    text-align: start;
-  }
-}
-
 .footer__input {
   display: -webkit-box;
   display: -ms-flexbox;
