@@ -11,30 +11,10 @@
     margin-right: auto;
     margin-bottom: 30px;
 
-    //   @media (min-width: 767px) {
-    //       margin-right: auto;
-    //       margin-left: auto;
-    //       padding-top: 118px;
-    //       max-width: 360px;
-    //       font-size: 26px;
-    //       line-height: 1.62;
-    //   }
-
-    //   @media (max-width: 767px) {
-    //       margin-right: auto;
-    //       margin-left: auto;
-    //       padding-top: 118px;
-    //       max-width: 360px;
-    //       font-size: 26px;
-    //       line-height: 1.62;
-    //   }
-
-    //   @media (min-width: 1200px) {
-    //       padding-top: 200px;
-    //       max-width: 696px;
-    //       font-size: 44px;
-    //       line-height: 1.36;
-    //   }
+    // @media screen and (min-width: 1200px) {
+    //     font-weight: 900;
+    //     font-size: 44px;
+    // }
 }
 .overlay {
     max-width: 1600px;
@@ -45,17 +25,16 @@
     padding-top: 200px;
     padding-bottom: 200px;
 }
-.hero {
-    background: var(--bg-color);
-    height: 600px;
+// .hero {
+//     background: var(--bg-color);
+//     height: 600px;
 
-    @media (min-width: 767px) {
-        height: 400px;
-    }
-    @media (max-width:768px) {
-        height: 400px;
-    }
-    @media (max-width: 1200px) {
-        height: 600px;
-    }
-}    
+//     @media (min-width: 767px) {
+//         height: 400px;
+//     }
+//     @media (max-width:768px) {
+//         height: 400px;
+//     }
+//     @media (max-width: 1200px) {
+//         height: 600px;
+//     }}

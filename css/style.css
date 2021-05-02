@@ -899,29 +899,6 @@ button:hover {
   padding-bottom: 200px;
 }
 
-.hero {
-  background: var(--bg-color);
-  height: 600px;
-}
-
-@media (min-width: 767px) {
-  .hero {
-    height: 400px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    height: 400px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .hero {
-    height: 600px;
-  }
-}
-
 .task {
   display: -webkit-box;
   display: -ms-flexbox;
