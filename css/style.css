@@ -791,6 +791,26 @@ button:hover {
   stroke: solid rgba(255, 255, 255, 0.3);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .input {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-web {
+    padding-top: 65px;
+    margin: 0 auto;
+  }
+}
+
+.footer__adress {
+  max-width: 480px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .input__field {
   margin-right: 12px;
   padding-bottom: 15px;
@@ -838,6 +858,21 @@ button:hover {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__web {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__web {
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 }
 
 .hero__team {

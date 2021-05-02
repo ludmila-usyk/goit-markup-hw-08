@@ -14,7 +14,24 @@
 }
 .input {
     stroke: solid rgba(255, 255, 255, 0.3);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin: 0 auto;
+    }
 }
+.social-web {
+    @media screen and (min-width: 768px) {
+        padding-top: 65px;
+        margin: 0 auto;
+    }
+}
+.footer__adress {
+    max-width: 480px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+ 
 .input__field {
     margin-right: 12px;
     padding-bottom: 15px;
@@ -58,5 +75,16 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--white-color);
+}
+.footer__web {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
 }
 
