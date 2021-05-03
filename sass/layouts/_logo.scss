@@ -14,6 +14,12 @@
         margin-bottom: 20px;
     }
 }
+.footer__adress .logo__page {
+    @media screen and (max-width: 1199px) {
+        width: 100%;
+        justify-content: center;
+    }
+}
 .logo {
     margin-bottom: 20px;
     color: var(--white-color);

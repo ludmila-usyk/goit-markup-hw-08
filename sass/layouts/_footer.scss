@@ -11,6 +11,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    @media screen and (max-width: 1199px) {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 .input {
     stroke: solid rgba(192, 135, 135, 0.3);
