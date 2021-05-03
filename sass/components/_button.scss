@@ -1,5 +1,4 @@
 button:hover {
-    // background-color: var(--accent-color);
     cursor: pointer;
     color: var(--button-color);
 }
@@ -55,6 +54,7 @@ button:hover {
     transition-duration: 250ms;
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 .button__gallery {
     font-style: normal;
