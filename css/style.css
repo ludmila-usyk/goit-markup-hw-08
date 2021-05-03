@@ -793,12 +793,25 @@ body.modal-open {
 }
 
 .input {
-  stroke: solid rgba(255, 255, 255, 0.3);
+  stroke: solid rgba(192, 135, 135, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .input {
     margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input {
+    text-align: left;
   }
 }
 
@@ -1144,8 +1157,9 @@ a:focus .overlay__item {
 
 @media (max-width: 767px) {
   .customers__list {
-    min-width: 210px;
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1159,6 +1173,7 @@ a:focus .overlay__item {
   .customers__list {
     min-width: 226px;
     margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
