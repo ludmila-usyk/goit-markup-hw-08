@@ -79,6 +79,7 @@
         flex-basis: calc((100% - 30px)/2);
         margin-right: 30px;
         margin-bottom: 30px;
+        height: 251px;
     }
     &:nth-last-child(-n + 2) {
         @media (min-width: 768px) {

@@ -514,7 +514,7 @@ body.modal-open {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   display: -webkit-box;
@@ -529,6 +529,21 @@ body.modal-open {
   min-width: 528px;
   background-color: var(--white-color);
   padding: 40px;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .modal-btn {
@@ -1601,6 +1616,7 @@ a:focus .overlay__item {
     flex-basis: calc((100% - 30px)/2);
     margin-right: 30px;
     margin-bottom: 30px;
+    height: 251px;
   }
 }
 
