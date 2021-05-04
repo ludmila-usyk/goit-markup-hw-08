@@ -34,25 +34,22 @@ body.modal-open {
     justify-content: flex-end;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    min-height: 581px;
-    min-width: 528px;
     background-color: var(--white-color);
     padding: 40px;
     border-radius: 4px;
-
-    //   @media screen and (max-width: 768px) {
-        
-    //   }
-
-      @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         width: 450px;
         height: 609px;
-      }
+        min-height: 581px;
+        min-width: 528px;
+    }
 
-      @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         max-width: 528px;
         max-height: 581px;
-      }
+        min-height: 581px;
+        min-width: 528px;
+    }
 }
 
 .modal-btn {
@@ -104,7 +101,4 @@ body.modal-open {
     &:focus {
         color: var(--accent-color);
     }
-}
-.modal-section {
-
 }

@@ -525,8 +525,6 @@ body.modal-open {
   justify-content: flex-end;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  min-height: 581px;
-  min-width: 528px;
   background-color: var(--white-color);
   padding: 40px;
   border-radius: 4px;
@@ -536,6 +534,8 @@ body.modal-open {
   .modal {
     width: 450px;
     height: 609px;
+    min-height: 581px;
+    min-width: 528px;
   }
 }
 
@@ -543,6 +543,8 @@ body.modal-open {
   .modal {
     max-width: 528px;
     max-height: 581px;
+    min-height: 581px;
+    min-width: 528px;
   }
 }
 
