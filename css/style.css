@@ -141,7 +141,6 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 a {
@@ -1001,8 +1000,6 @@ body.modal-open {
   max-width: 1600px;
   background-position: top left;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1010,7 +1007,8 @@ body.modal-open {
 
 @media screen and (max-width: 768px) {
   .overlay {
-    height: 400px;
+    padding-top: 180px;
+    padding-bottom: 180px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images-01/mobile/bg_1_mobile.png);
   }
 }
@@ -1023,7 +1021,8 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .overlay {
-    height: 400px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images-01/tablet/bg_1_tablet.png);
   }
 }
