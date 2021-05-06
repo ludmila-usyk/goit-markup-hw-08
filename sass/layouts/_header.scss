@@ -142,10 +142,15 @@
         padding: 0;
     }
 }
-// .contact__item .mail__tell {
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-// }
+.contact__item .mail__tell {
+    @media screen and (min-width: 788px) and (max-width: 1199px) {
+        padding-top: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
 .contact__item {
     font-family: Roboto;
     font-style: normal;

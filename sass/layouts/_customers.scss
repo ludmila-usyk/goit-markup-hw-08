@@ -97,7 +97,7 @@
     align-items: center;
 
      @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding-bottom: 60px;
+        // padding-bottom: 60px;
     }
 
     @media (min-width: 1200px) {
@@ -127,14 +127,10 @@
     }
 }
 .customer {
-    padding-bottom: 90px;
-        @media (max-width: 767px) {
-            padding-top: 60px;
-        }
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            padding-top: 60px;
-        }
+    padding-bottom: 60px;
+    padding-top: 60px;
         @media (min-width: 1200px) {
-            padding-top: 90px;
+            padding-top: 94px;
+            padding-bottom: 94px;
         }
 }

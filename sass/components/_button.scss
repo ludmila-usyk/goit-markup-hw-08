@@ -76,7 +76,7 @@ button:hover {
 .button__gallery:not(:last-child) {
     margin-right: 8px;
 }
-.button__gallery:nth-child(n + 4) {
+.button__gallery {
     @media (max-width: 767px) {
         margin-top: 15px;
     }
