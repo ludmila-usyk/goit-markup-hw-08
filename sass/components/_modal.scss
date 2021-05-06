@@ -37,8 +37,12 @@ body.modal-open {
     background-color: var(--white-color);
     padding: 40px;
     border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+    }
     @media screen and (min-width: 768px) {
-        width: 450px;
+        max-width: 450px;
         height: 609px;
         min-height: 581px;
         min-width: 528px;

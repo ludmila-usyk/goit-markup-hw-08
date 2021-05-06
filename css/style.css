@@ -529,9 +529,15 @@ body.modal-open {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
     height: 609px;
     min-height: 581px;
     min-width: 528px;
@@ -1007,6 +1013,7 @@ body.modal-open {
 
 @media screen and (max-width: 768px) {
   .overlay {
+    height: 400px;
     padding-top: 180px;
     padding-bottom: 180px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images-01/mobile/bg.jpg);
@@ -1021,6 +1028,7 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .overlay {
+    height: 400px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images-01/tablet/bg.jpg);
@@ -1340,13 +1348,11 @@ a:focus .overlay__item {
   letter-spacing: 0.03em;
   color: var(--black-color);
   text-align: center;
-  margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
   .title-customers {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.18;
   }
@@ -1354,8 +1360,7 @@ a:focus .overlay__item {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .title-customers {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.17;
   }
@@ -1363,8 +1368,7 @@ a:focus .overlay__item {
 
 @media (min-width: 1200px) {
   .title-customers {
-    padding-top: 86px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
   }
@@ -1413,6 +1417,28 @@ a:focus .overlay__item {
   background-color: var(--white-color);
   cursor: pointer;
   fill: var(--accent-color);
+}
+
+.customer {
+  padding-bottom: 90px;
+}
+
+@media (max-width: 767px) {
+  .customer {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customer {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .customer {
+    padding-top: 90px;
+  }
 }
 
 .occupation-part {
@@ -1778,6 +1804,7 @@ a:focus .overlay__item {
   right: -100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   z-index: 100;
   width: 100%;
   height: 100vh;
@@ -1801,46 +1828,42 @@ a:focus .overlay__item {
   margin-bottom: 32px;
 }
 
-.menu {
-  display: inline-flex;
-  margin-bottom: 300px;
-}
-
-.menu-item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
 .menu-item__link {
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
-  text-align: center;
+  line-height: 1.18;
+  text-align: left;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  display: block;
   color: var(--black-color);
 }
 
-.menu-contact__item:nth-child(1) {
-  margin-bottom: 32px;
+.menu-contact__item {
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .menu-contact {
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 }
 
 .menu__tell {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.17;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-bottom: 32px;
 }
 
 .menu__mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   color: var(--grey-light-color);
+  margin-bottom: 32px;
 }
 
 .menu-item__link:hover,
