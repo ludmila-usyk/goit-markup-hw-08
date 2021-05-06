@@ -1057,7 +1057,7 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.);
   }
 }
 
@@ -1646,6 +1646,12 @@ a:focus .overlay__item {
   align-items: center;
 }
 
+@media screen and (max-width: 787px) {
+  .main-nav {
+    justify-content: space-between;
+  }
+}
+
 .advantage__main:not(:last-child) {
   margin-right: 30px;
 }
@@ -1772,9 +1778,6 @@ a:focus .overlay__item {
 }
 
 .mobile-menu-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   z-index: 105;
   width: 40px;
   height: 40px;

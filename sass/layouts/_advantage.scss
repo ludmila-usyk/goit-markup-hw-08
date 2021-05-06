@@ -19,6 +19,10 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+    @media screen and (max-width: 787px) {
+        justify-content: space-between;
+    }
 }
 .advantage__main:not(:last-child) {
     margin-right: 30px;
