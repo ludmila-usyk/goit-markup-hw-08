@@ -80,7 +80,12 @@
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(.);
+        url(.../images-01/deskktop/bg@2.jpg);
         }
     }
+}
+.hero {
+// align-items: center;
+// justify-content: center;
+// flex-wrap: wrap;
 }
