@@ -38,8 +38,8 @@
 
     @media screen and (max-width: 768px) {
         height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+        padding-top: 118px;
+        padding-bottom: 118px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images-01/mobile/bg.jpg);
 
@@ -55,8 +55,8 @@
 
     @media screen and (min-width: 768px) {
         height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;        
+        padding-top: 118px;
+        padding-bottom: 118px;        
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images-01/tablet/bg.jpg);
 
@@ -71,6 +71,8 @@
     }
     @media screen and (min-width: 1200px) {
         height: 600px;
+        padding-bottom: 200px;
+        padding-top: 200px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images-01/desktop/bg.jpg);
         
