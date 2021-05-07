@@ -1,12 +1,12 @@
 .mobile-menu-btn {
-    // position: absolute;
-    // top: 20px;
-    // right: 20px;
     z-index: 105;
     width: 40px;
     height: 40px;
     background-color: transparent;
     border: none;
+    position: fixed;
+    top: 5px;
+    right: 5px;
 }
 .mobile-menu-icon:hover {
     background-color: transparent;
@@ -61,7 +61,7 @@
     list-style: none;
 }
 .menu-social__link {
-    font-size: 18px;
+    font-size: 10px;
     line-height: 1.4;
     text-align: left;
     letter-spacing: 0.02em;
@@ -76,7 +76,7 @@
 }
 .menu-item__link {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1.18;
     text-align: left;
     letter-spacing: 0.02em;
@@ -93,7 +93,7 @@
 }
 .menu__tell {
     font-weight: 500;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--accent-color);
@@ -101,7 +101,7 @@
 }
 .menu__mail {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--grey-light-color);

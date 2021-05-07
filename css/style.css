@@ -441,7 +441,7 @@ button:hover {
 }
 
 .agreement__label {
-  font-size: 14px;
+  font-size: 2vw;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-light-color);
@@ -479,7 +479,7 @@ button:hover {
   margin-bottom: 12px;
   font-family: Roboto;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 3vw;
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--black-color);
@@ -1018,7 +1018,7 @@ body.modal-open {
   background-position: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .overlay {
     height: 400px;
     padding-top: 118px;
@@ -1027,13 +1027,13 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-01/mobile/bg@2.jpg);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .overlay {
     height: 400px;
     padding-top: 118px;
@@ -1042,7 +1042,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-01/tablet/bg@2.jpg);
   }
@@ -1051,6 +1051,8 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .overlay {
     height: 600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-01/desktop/bg.jpg);
   }
 }
@@ -1783,6 +1785,9 @@ a:focus .overlay__item {
   height: 40px;
   background-color: transparent;
   border: none;
+  position: fixed;
+  top: 5px;
+  right: 5px;
 }
 
 .mobile-menu-icon:hover {
@@ -1844,7 +1849,7 @@ a:focus .overlay__item {
 }
 
 .menu-social__link {
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.4;
   text-align: left;
   letter-spacing: 0.02em;
@@ -1861,7 +1866,7 @@ a:focus .overlay__item {
 
 .menu-item__link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1.18;
   text-align: left;
   letter-spacing: 0.02em;
@@ -1881,7 +1886,7 @@ a:focus .overlay__item {
 
 .menu__tell {
   font-weight: 500;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
@@ -1890,7 +1895,7 @@ a:focus .overlay__item {
 
 .menu__mail {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--grey-light-color);

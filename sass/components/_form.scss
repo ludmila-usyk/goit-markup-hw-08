@@ -42,7 +42,8 @@
     cursor: pointer;
 }
 .agreement__label {
-    font-size: 14px;
+    // font-size: 14px;
+        font-size: 2vw;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey-light-color);
@@ -76,7 +77,8 @@
     margin-bottom: 12px;
     font-family: Roboto;
     font-weight: bold;
-    font-size: 20px;
+    // font-size: 20px;
+        font-size: 3vw;
     line-height: 1.15;
     letter-spacing: 0.03em;
     color: var(--black-color);
