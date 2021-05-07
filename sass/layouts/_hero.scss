@@ -38,8 +38,8 @@
 
     @media screen and (max-width: 768px) {
         height: 400px;
-    padding-top: 180px;
-    padding-bottom: 180px;
+    padding-top: 118px;
+    padding-bottom: 118px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images-01/mobile/bg.jpg);
 
@@ -55,8 +55,8 @@
 
     @media screen and (min-width: 768px) {
         height: 400px;
-    padding-top: 200px;
-    padding-bottom: 200px;        
+    padding-top: 118px;
+    padding-bottom: 118px;        
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images-01/tablet/bg.jpg);
 
@@ -72,7 +72,7 @@
     @media screen and (min-width: 1200px) {
         height: 600px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(.../images-01/desktop/bg.jpg);
+        url(../images-01/desktop/bg.jpg);
         
         @media screen and (min-device-pixel-ratio: 2),
         screen and (-webkit-min-device-pixel-ratio: 2),
@@ -80,12 +80,7 @@
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(.../images-01/desktop/bg@2.jpg);
+        url(../images-01/desktop/bg@2.jpg);
         }
     }
 }
-// .test {
-// align-items: center;
-// justify-content: center;
-// flex-wrap: wrap;
-// }
