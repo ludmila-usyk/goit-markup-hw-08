@@ -66,6 +66,14 @@
     text-align: left;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
+    @media screen and (min-width: 400px) and (max-width: 439.98px) {
+        font-size: 15px;
+    }
+
+    @media screen and (min-width: 440px) and (max-width: 767.98px) {
+            font-size: 18px;
+    }
 }
 .menu-social__item:not(:last-child):after {
     content: '';

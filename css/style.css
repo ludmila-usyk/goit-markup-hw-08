@@ -1856,6 +1856,18 @@ a:focus .overlay__item {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 400px) and (max-width: 439.98px) {
+  .menu-social__link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 767.98px) {
+  .menu-social__link {
+    font-size: 18px;
+  }
+}
+
 .menu-social__item:not(:last-child):after {
   content: '';
   margin-right: 10px;
