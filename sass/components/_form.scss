@@ -42,12 +42,16 @@
     cursor: pointer;
 }
 .agreement__label {
-    // font-size: 14px;
-        font-size: 2vw;
+    font-size: 12px;
+    text-align: left;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey-light-color);
     display: inline;
+
+    @media screen and (min-width: 480px) {
+        font-size: 18px;
+    }
 }
 .contract {
     color: var(--accent-color);
@@ -77,9 +81,9 @@
     margin-bottom: 12px;
     font-family: Roboto;
     font-weight: bold;
-    // font-size: 20px;
-        font-size: 3vw;
+    font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
     color: var(--black-color);
+    text-align: center;
 }

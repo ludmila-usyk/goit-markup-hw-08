@@ -441,11 +441,18 @@ button:hover {
 }
 
 .agreement__label {
-  font-size: 2vw;
+  font-size: 12px;
+  text-align: left;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-light-color);
   display: inline;
+}
+
+@media screen and (min-width: 480px) {
+  .agreement__label {
+    font-size: 18px;
+  }
 }
 
 .contract {
@@ -479,10 +486,11 @@ button:hover {
   margin-bottom: 12px;
   font-family: Roboto;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--black-color);
+  text-align: center;
 }
 
 .backdrop {
@@ -1280,7 +1288,6 @@ a:focus .overlay__item {
 
 @media (min-width: 768px) {
   .cards {
-    margin-bottom: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1291,7 +1298,6 @@ a:focus .overlay__item {
 
 @media (min-width: 1200px) {
   .cards {
-    margin-bottom: 94px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1412,7 +1418,6 @@ a:focus .overlay__item {
 
 @media (min-width: 1200px) {
   .customers {
-    margin-bottom: 94px;
     padding-bottom: 0;
   }
 }
@@ -1786,8 +1791,8 @@ a:focus .overlay__item {
   background-color: transparent;
   border: none;
   position: fixed;
-  top: 5px;
-  right: 5px;
+  top: 20px;
+  right: 20px;
 }
 
 .mobile-menu-icon:hover {
@@ -1858,7 +1863,7 @@ a:focus .overlay__item {
 
 @media screen and (min-width: 400px) and (max-width: 439.98px) {
   .menu-social__link {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -1887,6 +1892,18 @@ a:focus .overlay__item {
   color: var(--black-color);
 }
 
+@media screen and (min-width: 400px) and (max-width: 439.98px) {
+  .menu-item__link {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 767.98px) {
+  .menu-item__link {
+    font-size: 42px;
+  }
+}
+
 .menu-contact__item {
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -1905,6 +1922,18 @@ a:focus .overlay__item {
   margin-bottom: 32px;
 }
 
+@media screen and (min-width: 400px) and (max-width: 439.98px) {
+  .menu__tell {
+    font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 767.98px) {
+  .menu__tell {
+    font-size: 36px;
+  }
+}
+
 .menu__mail {
   font-weight: 500;
   font-size: 18px;
@@ -1912,6 +1941,18 @@ a:focus .overlay__item {
   letter-spacing: 0.03em;
   color: var(--grey-light-color);
   margin-bottom: 32px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 439.98px) {
+  .menu__mail {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 767.98px) {
+  .menu__mail {
+    font-size: 26px;
+  }
 }
 
 .menu-item__link:hover,

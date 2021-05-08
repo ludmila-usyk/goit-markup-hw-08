@@ -5,8 +5,8 @@
     background-color: transparent;
     border: none;
     position: fixed;
-    top: 5px;
-    right: 5px;
+    top: 20px;
+    right: 20px;
 }
 .mobile-menu-icon:hover {
     background-color: transparent;
@@ -68,7 +68,7 @@
     color: var(--accent-color);
 
     @media screen and (min-width: 400px) and (max-width: 439.98px) {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     @media screen and (min-width: 440px) and (max-width: 767.98px) {
@@ -91,6 +91,14 @@
     margin-bottom: 32px;
     display: block;
     color: var(--black-color);
+
+            @media screen and (min-width: 400px) and (max-width: 439.98px) {
+                font-size: 40px;
+            }
+
+            @media screen and (min-width: 440px) and (max-width: 767.98px) {
+                font-size: 42px;
+            }
 }
 .menu-contact__item {
     font-size: 14px;
@@ -106,6 +114,14 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
     margin-bottom: 32px;
+
+            @media screen and (min-width: 400px) and (max-width: 439.98px) {
+                font-size: 34px;
+            }
+
+            @media screen and (min-width: 440px) and (max-width: 767.98px) {
+                font-size: 36px;
+            }
 }
 .menu__mail {
     font-weight: 500;
@@ -114,6 +130,14 @@
     letter-spacing: 0.03em;
     color: var(--grey-light-color);
     margin-bottom: 32px;
+
+        @media screen and (min-width: 400px) and (max-width: 439.98px) {
+            font-size: 24px;
+        }
+
+        @media screen and (min-width: 440px) and (max-width: 767.98px) {
+            font-size: 26px;
+        }
 }
 .menu-item__link:hover,
 .menu-item__link:focus {
