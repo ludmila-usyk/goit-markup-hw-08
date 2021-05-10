@@ -1213,6 +1213,12 @@ body.modal-open {
   opacity: 0.9;
 }
 
+@media screen and (max-width: 480px) {
+  .overlay__text {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .overlay__text {
     padding: 77px 24px;
@@ -1791,8 +1797,8 @@ a:focus .overlay__item {
   background-color: transparent;
   border: none;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 5vw;
+  right: 5vw;
 }
 
 .mobile-menu-icon:hover {

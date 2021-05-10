@@ -126,6 +126,9 @@
     .list:focus & {
         opacity: 0.9;
     }
+    @media screen and (max-width: 480px) {
+        font-size: 14px;
+    }
     @media screen and (max-width: 767px) {
     padding: 77px 24px;
     }
@@ -184,11 +187,9 @@
 }
 .cards {
     @media (max-width: 767px) {
-        // margin-bottom: 60px;
         flex-wrap: wrap;
     }
     @media (min-width: 768px) {
-        // margin-bottom: 60px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -196,7 +197,6 @@
         flex-wrap: wrap;
     }
     @media (min-width: 1200px) {
-        // margin-bottom: 94px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
